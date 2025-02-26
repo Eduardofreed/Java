@@ -13,7 +13,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    Usuario cliente = new Usuario("Joaquim", 15, "Ação");
-    Usuario gerente = new Usuario("Paulo", 35);
+    Usuario cliente = new Usuario("Joaquim", 15, "Gerente");
+    Usuario gerente = new Usuario("Paulo", 35, "Cliente");
+
+    cliente.selecionar();
     }
 }
